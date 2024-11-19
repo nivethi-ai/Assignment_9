@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Store Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #fff;
+     
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      width: 1200px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    header .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #2b5e41;
+      gap:175px;
+    }
+    header nav {
+      display: flex;
+      gap: 120px;
+    }
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+    header nav a:hover {
+      color: #2b5e41;
+    }
+    .theme-toggle {
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .main .content {
+      max-width: 50%;
+    }
+    .main h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #2b5e41;
+    }
+    .main p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #666;
+    }
+    .main .btn {
+      text-decoration: none;
+      background-color: #2b5e41;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .main .btn:hover {
+      background-color: #3a7857;
+    }
+    .main .image {
+      max-width: 45%;
+    }
+    .main .image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .social-links {
+      position: absolute;
+      right: 50px;
+      top: 200px;
+      writing-mode: vertical-rl;
+      text-align: center;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #333;
+      margin: 5px 0;
+      display: block;
+    }
+    .social-links a:hover {
+      color: #2b5e41;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>PLANTEX</h1>
+      <div class="logoimag">
+      <img src="img/favicon.png" alt="logo.img">
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="theme-toggle">🌙</div>
+  </header>
+  <main class="main">
+    <div class="content">
+      <h1>Plants will make your life better</h1>
+      <p>Create incredible plant designs for your offices or apartments. Add freshness to your new ideas.</p>
+      <a href="#" class="btn">Explore →</a>
+    </div>
+    <div class="image">
+      <img src="img/home.png" alt="Plant">
+    </div>
+  </main>
+  <div class="social-links">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+  </div>
+  <header class="header">
+    <h1>Who we really are & why choose us</h1>
+    <p>We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service every time.</p>
+    <button>Shop Now →</button>
+    <img src="img/about.png" alt="about.imge">
+  </header>
+
+  <main class="main-content">
+    <section class="steps-section">
+      <h2>Steps to start your plants off right</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>01</h3>
+          <p><strong>Choose Plant</strong><br>We have several varieties of plants you can choose from.</p>
+        </div>
+        <div class="step">
+          <h3>02</h3>
+          <p><strong>Place an order</strong><br>Once your order is set, we move to the next step which is the shipping.</p>
+        </div>
+        <div class="step">
+          <h3>03</h3>
+          <p><strong>Get plants delivered</strong><br>Our delivery process is easy; you receive the plant directly at your door.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <h2>Check out our products</h2>
+      <p>Here are some selected plants from our store collection, all in excellent shape and with a long life span.</p>
+      <div class="products">
+        <div class="product">
+          <img src="img/product1.png" alt="Cactus Plant">
+          <h3>Cactus Plant</h3>
+          <p>$11.99</p>
+        </div>
+        <div class="product">
+          <img src="img/product2.png" alt="Cacti Plant">
+          <h3>Cacti Plant</h3>
+          <p>$13.99</p>
+        </div>
+        <div class="product">
+          <img src="img/product3.png" alt="Aloe Vera Plant">
+          <h3>Aloe Vera Plant</h3>
+          <p>$7.99</p>
+        </div>
+        <div class="product">
+          <img src="img/product4.png" alt="Succulent Plant">
+          <h3>Succulent Plant</h3>
+          <p>$11.99</p>
+        </div>
+        <div class="product">
+          <img src="img/product5.png" alt="Fern Plant">
+          <h3>Fern Plant</h3>
+          <p>$15.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Some common questions we are often asked</h2>
+      <div class="faq">
+        <p>Why are my flowers falling off or dying?</p>
+        <p>What causes leaves to become pale?</p>
+        <p>What causes brown crispy leaves?</p>
+        <p>How do I choose a plant?</p>
+        <p>Why are gnats flying around my plant?</p>
+      </div>
+      <div class="contact-form">
+        <h3>Reach out to us</h3>
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea placeholder="Write your message here..."></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>PLANTEX</h3>
+        <p>Subscribe to our newsletter to stay updated</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+      <div class="footer-section">
+        <h4>Our Address</h4>
+        <p>1234 - Peru<br>La Libertad - 43210<br>123-456-789</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>+999 888 777</p>
+      </div>
+      <div class="footer-section">
+        <h4>We accept all credit cards</h4>
+        <img src="img/card1.png" alt="Visa">
+        <img src="img/card2.png" alt="MasterCard">
+        <img src="img/card3.png" alt="PayPal">
+        <img src="img/card4.png" alt="Discover">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
